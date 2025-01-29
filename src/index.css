@@ -1,0 +1,83 @@
+
+#slider{
+    scrollbar-width: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@plugin "daisyui";
+
+@plugin "daisyui" {
+    themes: light --default;
+}
+@theme{
+    --text-xs:16px;
+    --text-sm:20px;
+    --text-base:19.5px;
+    --text-lg:21.94px;
+    --text-xs: 16px;
+    --text-sm: 20px;
+    --text-base: 19.5px;
+    --text-lg: 21.94px;
+    --text-xl: 24.38px;
+    --text-2xl: 29.26px;
+    --text-3xl: 50px;
+    --text-4xl: 58px;
+    --text-8xl: 106px;
+
+    --font-palanquin:'palanquin',sans-serif;
+    --font-montserrat:'Montserrat',sans-serif;
+    
+    --color-coral-red: #FF6452;
+    --color-slate-gray: #6D6D6D;
+    --color-pale-blue: #F5F6FF;
+    --color-primary:#ECEEFF;
+    --color-white-400:rgba(255,255,0.80);
+
+    --shadow-3xl:0 10px 40px rgba(0, 0, 0, 0.1);
+    --breakpoint-wide:1440px;
+
+    --background-image-hero:url('assets/images/collection-background.svg');
+    --background-image-card :url('assets/images/thumbnail-background.svg');
+
+}
+@layer components {
+    .max-container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    .input {
+        @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
+    }
+
+}
+@utility padding{
+    @apply sm:px-16 px-8 sm:py-24 py-12;
+}
+@utility padding-x{
+    @apply sm:px-16 px-8;
+}
+@utility padding-y{
+    @apply sm:py-24 py-12;
+}
+
+@utility padding-l{
+    @apply sm:pl-16 pl-8;
+}
+@utility padding-r{
+    @apply sm:pl-16 pl-8;
+}
+@utility padding-t{
+    @apply sm:pt-24 pt-12;
+}
+@utility padding-b{
+    @apply sm:pb-24 pb-12;
+}
+@utility info-text{
+    @apply font-montserrat text-slate-gray text-lg leading-7;
+
+}
+
