@@ -40,8 +40,8 @@ const Footer = () => {
           </div>
         )}
       </div>
-      <div className="flex w-full justify-between items-center mt-10">
-        <div className="flex gap-4"><img src={copyrightSign} alt="copyright" /><p className="text-lg">Copyright,allrights reserved</p></div>
+      <div className="flex max-lg:justify-center max-lg:flex-wrap w-full justify-between items-center mt-10">
+        <div className="flex gap-4"><img src={copyrightSign} alt="copyright" /><p className="text-lg text-white">Copyright,allrights reserved</p></div>
         <p className="text-lg font-bold text-coral-red">Creact by Yassine Ben kacem The Snake Man {':-)'}</p>
       </div>
       

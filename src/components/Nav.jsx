@@ -27,7 +27,7 @@ export default function Nav() {
                 className="text-md font-medium font-montserrat text-white hover:text-red-400"
                 >{link.label}</a></li>)}
             </ul>
-            <div onClick={handleSetValue} className="cursor-pointer rounded-full lg:hidden  flex items-center justify-center max-lg:block hover:bg-gray-100 p-2">
+            <div onClick={handleSetValue} className="cursor-pointer bg-gray-500 rounded-full lg:hidden  flex items-center justify-center max-lg:block hover:bg-gray-100 p-2">
                <img width={30} height={30} src={hamburger} alt="bars" />
             </div>
             <SideBar />
