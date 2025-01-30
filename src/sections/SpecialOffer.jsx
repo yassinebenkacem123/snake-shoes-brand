@@ -6,10 +6,10 @@ const SpecialOffer = () => {
     <section className="padding-x padding-y">
      <div className="flex py-10 flex-row max-xl:flex-col-reverse gap-20 justify-start items-center">
         <div className="flex items-center justify-center">
-          <img src={offer} className="bg-cover bg-center  w-[950px]  h-[700px] xl:w-[850px]" alt="spacial-offer" />
+          <img src={offer} className="bg-cover bg-center  lg:w-[700px] max-sm:w-[500px] h-[700px] xl:w-[850px]" alt="spacial-offer" />
         </div>
         <div className="flex flex-col justify-start">
-          <h1 className="capitalize font-palanquin font-bold text-[70px] ">Our <span className="text-coral-red">specail</span> offer</h1>
+          <h1 className="capitalize font-palanquin font-bold text-[70px] max-lg:text-[55px] ">Our <span className="text-coral-red">specail</span> offer</h1>
           <p className="xl:w-xl font-montserrat text-lg text-slate-gray ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed quam sit dicta explicabo laboriosam minus, vel dolor itaque nostrum atque expedita in suscipit soluta porro natus corrupti repudiandae voluptas repellat!</p>
           <div className="flex mt-10 items-center gap-5">
             <Button>View Details</Button>

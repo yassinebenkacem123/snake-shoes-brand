@@ -7,17 +7,17 @@ import { LoginContext } from "./Login";
 const Content = () => {
    let {pageOn} = useContext(LoginContext)
     return ( pageOn?
-    <form className="w-full py-10 mt-3 flex items-center rounded-2xl flex-col gap-5 dark:bg-gray-300 bg-black">
-        <div className=" mt-10 dark:bg-black bg-white rounded-full p-10">
-            <GoPerson  className="text-4xl"/>
+    <form className="w-full max-xl:w-[600px] py-10 mt-3 flex items-center rounded-2xl flex-col gap-5 dark:bg-gray-300 bg-black">
+        <div className=" mt-10 dark:bg-black bg-white rounded-full max-xl:p-5 p-10">
+            <GoPerson  className="max-xl:text-xl text-4xl"/>
         </div>
         <div className="w-full px-25 gap-10 flex flex-col">
-            <div className="dark:text-black bg-white flex gap-4 items-center  p-4  rounded-4xl ">
-                <GoPersonFill className=" text-3xl"/>
+            <div className="dark:text-black bg-white flex gap-4 items-center max-xl:p-2 p-4  rounded-4xl ">
+                <GoPersonFill className=" max-xl:text-2xl text-3xl"/>
                 <input type="text" required className="p-2 w-[90%] border-none outline-none text-2xl font-medium" placeholder="user name" />
             </div>
-            <div className="bg-white dark:text-black flex gap-4 items-center  p-4  rounded-4xl ">
-                <GoPasskeyFill className="text-3xl"/><input type="password" className="p-2 w-[90%] border-none outline-none text-2xl font-medium" placeholder="user password" />
+            <div className="bg-white max-xl:p-2 dark:text-black flex gap-4 items-center  p-4  rounded-4xl ">
+                <GoPasskeyFill className="text-3xl max-xl:text-2xl"/><input type="password" className="p-2 w-[90%] border-none outline-none text-2xl font-medium" placeholder="user password" />
             </div>
         </div>
         <div 
@@ -32,7 +32,7 @@ const Content = () => {
             
         </div>
         <button
-         className="bg-coral-red cursor-pointer hover:bg-red-400 text-white py-4 rounded-4xl text-2xl mt-10 px-30">Login</button>
+         className="bg-coral-red cursor-pointer max-xl:py-3  hover:bg-red-400 max-xl:text-lg text-white py-4 rounded-4xl text-2xl  mt-10 px-30 max-xl:px-20">Login</button>
         
     </form>:null
   )
