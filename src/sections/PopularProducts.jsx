@@ -14,7 +14,7 @@ const PopularProducts = () => {
   return (
     <section className="mt-50 flex flex-col gap-14">
       <div className="padding-x">
-        <h1 className="font-palanquin font-bold text-[80px]">Our <span className="text-coral-red ">Popular</span> Products</h1>
+        <h1 className="font-palanquin max-lg:text-[50px] font-bold text-[80px]">Our <span className="text-coral-red ">Popular</span> Products</h1>
         <p className="text-lg text-slate-gray">Discover our latest shoes collection designed for comfort, performance, and bold looks</p>
       </div>
       <section id="products" className="relative flex items-center">

@@ -6,7 +6,7 @@ const SideBar = () => {
     let {value,handleSetValue} = useContext(SideBarContext);
   return (
     < div 
-    className={`h-screen scroll-smooth lg:hidden ${value?"hidden":"block"} absolute p-10 right-0 transition ease duration-800 bottom-0 bg-coral-red w-[30%]`}>
+    className={`h-screen scroll-smooth lg:hidden ${value?"hidden":"block"} z-100 fixed p-10 right-0 transition ease duration-800 bottom-0 bg-coral-red w-[30%]`}>
         <FiXCircle onClick={()=>handleSetValue()} className="text-2xl cursor-pointer rounded-full relative text-white bottom-4"/>
         <ul className="flex w-full h-full gap-8 flex-col ">
             {navLinks.map((link,index)=>

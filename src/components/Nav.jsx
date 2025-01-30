@@ -15,7 +15,7 @@ export default function Nav() {
   return (
   <SideBarContext.Provider value={{value,handleSetValue}}> 
     <header className="z-10 relative padding-x bg-[#32053b] py-1">
-        <nav className="flex  max-container justify-between items-center">
+        <nav className="flex max-container justify-between items-center">
             <a href="\" className="flex  items-center gap-2">
                 <img src={pageLogo} alt="logo" width={50}/>
                 <h1 className="font-bold text-2xl text-coral-red ">Snake</h1>

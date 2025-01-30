@@ -1,8 +1,9 @@
 import { star } from "../assets/icons"
 
+// eslint-disable-next-line react/prop-types
 const ProductsSlider = ({shoe, shoeName, shoePrice}) => {
   return (
-    <div className="w-[300px] h-[300px] bg-white border-2 border-coral-red ml-5 shadow-xl  items-start gap-2 cursor-pointer rounded-xl overflow-hidden hover:scale-102 ease-in-out duration-300  inline-block ">
+    <div className="max-lg:w-[250px] w-[300px] h-[300px] bg-white border-2 border-coral-red ml-5 shadow-xl  items-start gap-2 cursor-pointer rounded-xl overflow-hidden hover:scale-102 ease-in-out duration-300  inline-block ">
         <div className="bg-card bg-cover bg-center flex justify-center items-center p-2  w-full ">
             <img src={shoe} alt="shoe" className="h-[180px] w-full" />
         </div>
